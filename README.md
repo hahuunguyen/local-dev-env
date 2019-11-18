@@ -54,3 +54,6 @@ dotspacemacs-configuration-layers
                                       ))
 )
 ```
+
+### Java
+Download latest Java version (recommend Corretto) to `binaries` folder
