@@ -1,0 +1,47 @@
+" Normally we use vim-extensions. If you want true vi-compatibility
+" remove change the following statements
+set nocompatible		" Use Vim defaults instead of 100% vi compatibility
+set backspace=indent,eol,start	" more powerful backspacing
+
+" Now we set some defaults for the editor
+set history=1000		" keep 50 lines of command line history
+set ruler			" show the cursor position all the time
+
+" modelines have historically been a source of security/resource
+" vulnerabilities -- disable by default, even when 'nocompatible' is set
+set nomodeline
+
+"" General
+set number      		" Show line numbers
+
+set encoding=utf-8 		" Encoding
+
+syntax enable 			" Enable syntax
+
+" Theme and color setting 
+set background=dark
+colorscheme desert
+
+set showbreak=+++ 		" Wrap-broken line prefix
+set textwidth=100		" Line wrap (number of cols)
+set showmatch			" Highlight matching brace
+set visualbell			" Use visual bell (no beeping)
+ 
+set hlsearch			" Highlight all search results
+set smartcase			" Enable smart-case search
+set ignorecase			" Always case-insensitive
+set incsearch			" Searches for strings incrementally
+ 
+set autoindent			" Auto-indent new lines
+set shiftwidth=4		" Number of auto-indent spaces
+set smartindent			" Enable smart-indent
+set smarttab			" Enable smart-tabs
+set softtabstop=4		" Number of spaces per Tab
+ 
+set undolevels=1000		" Number of undo levels
+
+set wildmenu
+
+" Shady characters, from https://www.youtube.com/watch?v=aHm36-na4-4
+set listchars=tab:>~,nbsp:_,trail:.
+set list

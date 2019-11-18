@@ -1,0 +1,9 @@
+# To use common configuration in %APPDATA%\mintty, simply remove this file
+ThemeFile=xterm
+BellType=0
+BoldAsFont=no
+BoldAsColour=yes
+CursorType=block
+Font=Consolas
+Transparency=low
+Term=xterm

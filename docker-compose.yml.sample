@@ -1,0 +1,15 @@
+version: '3'
+services:
+        core:
+                build:
+			context: . 
+			args:
+				user: <username>
+                container_name: dev
+				privileged: true
+                ports:
+                        - "127.0.0.1:2233:22"
+                volumes:
+                        - //var/run/docker.sock:/var/run/docker.sock
+                        - <source_folder>:/home/plainbash/windows/
+                        - <source_folder>/.ssh/keys:/home/<username>/ssh_keys
